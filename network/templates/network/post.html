@@ -1,0 +1,27 @@
+{% extends "network/layout.html" %}
+
+{% load static %}
+{% block body %}
+
+<div class="post frosted-glass mb-4 p-3" data-post-id="{{ post.id }}">
+    <p class="post-content mb-2">{{ post.content }}</p>
+    <div class="d-flex justify-content-between align-items-center">
+        <div>
+            <a href="{% url 'profile' post.author.username %}" class="text-decoration-none">
+                <strong>{{ post.author.username }}</strong>
+            </a>
+        </div>
+        <div>
+            <small class="text-muted">{{ post.created_at|date:"F j, Y, g:i a" }}</small>
+        </div>
+       
+        <div>
+            {% if user.is_authenticated %}
+                <button class="btn like-button {% if post.user_liked %}bi-heart-fill{% else %}bi-heart{% endif %}" data-post-id="{{ post.id }}" data-liked="{{ post.user_liked }}" style="border-width: 0; color: #c1121f"></button>
+            {% endif %}
+            <span id="likes-count-{{ post.id }}" class="text-muted">{{ post.likes }} likes</span>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
