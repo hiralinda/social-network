@@ -73,8 +73,7 @@
 
 - **Frontend**: HTML, CSS (Bootstrap), JavaScript
 - **Backend**: Django
-- **Database**: SQLite3 (or any configured database)
-
+- **Database**: SQLite3
 ## Future Improvements
 
 - **Notifications**: Implement notifications for new followers or likes.
