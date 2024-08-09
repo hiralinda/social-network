@@ -1,6 +1,6 @@
 # Social Network
 
-[This project](https://cs50.harvard.edu/web/2020/projects/4/network/) is a part of the CS50 Web Programming with Python and JavaScript course. A social network application that allows users to make posts, follow other users, and like posts. Built using Django, JavaScript, HTML, and Bootstrap for the layout.
+[This project](https://cs50.harvard.edu/web/2020/projects/4/network/) is a part of the CS50 Web Programming with Python and JavaScript course. A social network application that allows users to make posts, follow other users, and like posts. Users are also allowed to go on Settings and change the background of the website based on their preference. Built using Django, JavaScript, HTML, and Bootstrap for the layout.
 
 ## Video Preview
 
@@ -14,6 +14,7 @@
 - Like and unlike posts
 - Pagination for viewing posts
 - Profile pages for each user
+- Settings for each user
 
 ## Getting Started
 
@@ -66,6 +67,7 @@
 - **/all_posts**: Shows all posts made by users.
 - **/following**: Displays posts from users that the current user follows.
 - **/profile/<username>**: Displays the selected user's profile and their posts.
+- **/settings**: Display background options for a new layout experience.
 
 ## Technologies Used
 
